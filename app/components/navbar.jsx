@@ -2,45 +2,71 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { BsFillPersonLinesFill } from 'react-icons/bs';
+import { BsWhatsapp } from 'react-icons/bs';
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
+    const [shadow, setShadow] = useState(false);
+    const [navBg, setNavBg] = useState('#ecf0f3');
+    const [linkColor, setLinkColor] = useState('#1f2937') 
+    const currentRoute = usePathname().split('/');
+
+    useEffect(() => {
+        if(currentRoute.length === 4) {
+            setNavBg('transparent');
+            setLinkColor('#ecf0f3')
+        } else {
+            setNavBg('#ecf0f3');
+            setLinkColor('#1f2937');
+        }
+    },[currentRoute])
 
     const handleNav = () => {
         setNav(!nav)
     }
 
+    useEffect(() => {
+        const handleShadow = () => {
+        if(window.scrollY >= 90) {
+            setShadow(true);
+        } else {
+            setShadow(false);
+        }
+    };
+    window.addEventListener('scroll', handleShadow)
+    }, [])
+
     return(
-        <div className='fixed w-full h-20 shadow-xl z-[100]'>
+        <div style={{backgroundColor:`${navBg}`}} className={shadow ? 'fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
-                    <Image src='/../public/assets/navLogo.png' alt='Kang Fajrin Logo' width='75' height='30'  />
+                    <Image className='pl-5' src='/../public/assets/kf.png' alt='Kang Fajrin Logo' width='75' height='30'  />
                 </Link>
 
                 <div>
-                    <ul className='hidden md:flex'>
+                    <ul style={{color:`${linkColor}`}} className='hidden md:flex pr-5'>
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#about'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#skills'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#projects'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Projects</li>
                         </Link>
-                        <Link href='/'>
+                        <Link href='/#contact'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Contact</li>
                         </Link>
                     </ul>
                     <div onClick={handleNav} className='md:hidden cursor-pointer'>
-                        <AiOutlineMenu size={25} />
+                        <AiOutlineMenu style={{color:`${linkColor}`}}  size={25} />
                     </div>
                 </div>
             </div>
@@ -65,35 +91,43 @@ const Navbar = () => {
                     <div className='py-4 flex flex-col pb-10'>
                         <ul className='uppercase'>
                             <Link href='/'>
-                                <li className='py-4 text-sm'>Home</li>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Home</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>About</li>
+                            <Link href='/#about'>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>About</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Skills</li>
+                            <Link href='/#skills'>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Skills</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Project</li>
+                            <Link href='/#projects'>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Project</li>
                             </Link>
-                            <Link href='/'>
-                                <li className='py-4 text-sm'>Contact</li>
+                            <Link href='/#contact'>
+                                <li onClick={()=>setNav(false)} className='py-4 text-sm'>Contact</li>
                             </Link>
                         </ul>
                         <div className='pt-10'>
-                            <p className='tracking-widest uppercase text-[#5651e5]'>Let`s connect!</p>
+                            <p className='tracking-widest uppercase text-[#7abf17]'>Let`s connect!</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaLinkedinIn />
+                                    <Link href='https://www.linkedin.com/in/fajrin-yusuf-muttaqin-91115313a/' rel="noopener noreferrer" target="_blank">
+                                        <FaLinkedinIn />
+                                    </Link>
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <FaGithub />
+                                    <Link href='https://github.com/yfajrin' rel="noopener noreferrer" target="_blank">
+                                        <FaGithub />
+                                    </Link>
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <AiOutlineMail />
+                                    <Link href='mailto:fajrinyusuf@gmail.com' rel="noopener noreferrer" target="_blank">
+                                        <AiOutlineMail />
+                                    </Link>
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <BsFillPersonLinesFill />
+                                    <Link href='hhttps://api.whatsapp.com/send/?phone=6285759029216&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
+                                        <BsWhatsapp />
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,3 +1,5 @@
+import Footer from './components/footer'
+import Navbar from './components/navbar'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +13,19 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+         <title>Fajrin`s Portfolio Project</title> 
+         <link rel="icon" href="/kf.png" sizes="square" />
+      </head>     
+      <body className={inter.className}>
+        <div className='min-h-[100vh] relative'>
+          <Navbar />
+          <div className='pb-[2.5rem]'>
+            {children}
+          </div>
+          <Footer />
+        </div>
+      </body>
     </html>
   )
 }

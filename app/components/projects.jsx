@@ -1,22 +1,40 @@
+'use client'
 
-import propertyImg from '../../public/assets/projects/property.jpg';
-import cryptoImg from '../../public/assets/projects/crypto.jpg';
-import netflixImg from '../../public/assets/projects/netflix.jpg';
-import twitchImg from '../../public/assets/projects/twitch.jpg';
-
+import { useState, useEffect } from "react";
 import ProjectCard from "./project-card";
+import { getPortfolio } from "../actions/getPortfolio";
+
 
 const Projects = () => {
-  return (
-    <div className='w-full'>
+    const [portfolio, setPortfolio] = useState([]);
+
+    useEffect(()=>{
+        getPortfolio()
+        .then((data)=>setPortfolio(data)).
+        catch((error) => {
+            console.error('Error fetching portfolio data:', error)
+        });
+    },[])
+    return (
+    <div id='projects' className='w-full'>
         <div className='max-w-[1240px] mx-auto px-2 py-16'>
-            <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
-            <h2 className='py-4'>What I`ve Build</h2>
-            <div className='grid md:grid-cols-2 gap-8'>
-                <ProjectCard title='Property Finder' backgroundImg={propertyImg} projectUrl='/property' />
-                <ProjectCard title='Crypto App' backgroundImg={cryptoImg} projectUrl='/property' />
-                <ProjectCard title='Netflix Clone' backgroundImg={netflixImg} projectUrl='/property' />
-                <ProjectCard title='Twitch Clone' backgroundImg={twitchImg} projectUrl='/property' />
+            <p className='text-xl tracking-widest uppercase text-[#7abf17] px-10'>Projects</p>
+            <h2 className='py-4 px-10'>What I have Build</h2>
+            <div className='grid sm:grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 gap-4 px-10'>
+                {Array.isArray(portfolio) ? (portfolio.map((category)=>{
+                return (
+                    <div key={category.id}>
+                        <ProjectCard key={category.id} 
+                            title={category.categoryTitle} 
+                            backgroundImg={category.catImgSrc} 
+                            categoryUrl={`/projects/${category.category}`} 
+                            />
+                    </div>)
+                    })) : (
+                        <div>
+                            <h2>Loading projects</h2>
+                        </div>
+                    )}
             </div>
         </div>
       
