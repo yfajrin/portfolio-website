@@ -44,7 +44,7 @@ const Navbar = () => {
         <div style={{backgroundColor:`${navBg}`}} className={shadow ? 'fixed bg-[#ecf0f3] w-full h-20 shadow-xl z-[100]' : 'fixed w-full h-20 z-[100]'}>
             <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
                 <Link href='/'>
-                    <Image className='pl-5' src='/../public/assets/kf.png' alt='Kang Fajrin Logo' width='75' height='30'  />
+                    <Image className='pl-5' src='/assets/kf.png' alt='Kang Fajrin Logo' width='75' height='30'  />
                 </Link>
 
                 <div>
