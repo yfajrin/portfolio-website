@@ -1,0 +1,122 @@
+[
+    {"skillTitle": "Python",
+     "skillDescription": "Python is a high-level general-purpose programming language. Currently, I use python mainly for my data science projects within Jupyter or Google Colab.",
+     "skillUrl": "python"
+    },
+    {"skillTitle": "Pandas",
+     "skillDescription": "Pandas is an open source data analysis and manipulation tool library, built on top of the Python programming language. I use this library for my data science projects.",
+     "skillUrl": "pandas"
+    },
+    {"skillTitle": "NumPy",
+     "skillDescription": "NumPy or Numerical Python is an open source Python library for scientific computing. I use this library for my data science projects, and aiming to use it for my future research projects.",
+     "skillUrl": "numpy"
+    },
+    {"skillTitle": "Scikit-learn",
+     "skillDescription": "Scikit-learn is a machine learning library for the Python that features various classification, regression, and clustering algorithms.",
+     "skillUrl": "scikit-learn"
+    },
+    {"skillTitle": "Tensorflow",
+     "skillDescription": "TensorFlow is an pen-source library for machine learning and artificial intelligence. I used Tensorflow particularly on my deep learning projects.",
+     "skillUrl": "tensorflow"
+    },
+    {"skillTitle": "PyTorch",
+     "skillDescription": "PyTorch is a machine learning framework based on the Torch library, used for applications such as computer vision and natural language processing.",
+     "skillUrl": "pytorch"
+    },
+    {"skillTitle": "Tableau",
+     "skillDescription": "Tableau is a visualization software mainly used to visualize data and reveal patterns for analysis in business intelligence, making the data more understandable.",
+     "skillUrl": "tableau"
+    },
+    {"skillTitle": "R",
+     "skillDescription": "R is a programming language for statistical computing and graphics. I use R within R Studio for my data science and statistical research projects.",
+     "skillUrl": "r"
+    },
+    {"skillTitle": "SPSS",
+     "skillDescription": "SPSS is a statistical software suite developed by IBM. I used SPSS mainly for statistical research, advanced analytics, multivariate analysis, and business intelligence",
+     "skillUrl": "spss"
+    },
+    {"skillTitle": "Ms Excel",
+     "skillDescription": "Ms Excel is a well-known powerful spreadsheet editor developed by Microsoft. I particularly enjoy playing with Excel Solver for Optimization problems.",
+     "skillUrl": "ms-excel"
+    },
+    {"skillTitle": "HTML",
+     "skillDescription": "HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It is the basic structure of a website page.",
+     "skillUrl": "html"
+    },
+    {"skillTitle": "CSS",
+     "skillDescription": "Cascading Style Sheets or CSS is a style sheet language used to give styling for a web page. I prefer using a higher level CSS-based styling, such as Tailwind, Styled-components, or SCSS.",
+     "skillUrl": "css"
+    },
+    {"skillTitle": "JavaScript",
+     "skillDescription": "Javascript is a scripting language that enables us to create a dynamic website for better user experience. It is the essential part of a web page, aside from HTML and CSS.",
+     "skillUrl": "javascript"
+    },
+    {"skillTitle": "Typescript",
+     "skillDescription": "Typescript is an open-source high-level programming language developed by Microsoft that extends Javascript with additional static typing with optional type annotations for a better code and coding experience.",
+     "skillUrl": "typescript"
+    },
+    {"skillTitle": "ReactJs",
+     "skillDescription": "React is an open-source front-end JavaScript library for building user interfaces based on components, developed and maintained by Meta. It is currently the most popular library for front-end development.",
+     "skillUrl": "reactjs"
+    },
+    {"skillTitle": "NextJs",
+     "skillDescription": "React is a free and open-source front-end JavaScript library for building user interfaces based on components. It is maintained by Meta and a community of individual developers and companies.",
+     "skillUrl": "nextjs"
+    },
+    {"skillTitle": "Tailwind",
+     "skillDescription": "Tailwind CSS is a widely-used open source CSS framework. It enables a rapid styling for modern websites without ever leaving the HTML. Currently, I prefer tailwind over other CSS framework.",
+     "skillUrl": "tailwind"
+    },
+    {"skillTitle": "Firebase",
+     "skillDescription": "Firebase is a set of back-end cloud computing services and application development platforms provided by Google. I use it to store data for my web-dev projects.",
+     "skillUrl": "firebase"
+    },
+    {"skillTitle": "MongoDB",
+     "skillDescription": "MongoDB is a is a NoSQL database program, which is source-available cross-platform and document-oriented. It uses JSON-like documents with optional schemas.",
+     "skillUrl": "mongodb"
+    },
+    {"skillTitle": "Prisma",
+     "skillDescription": "Prisma is a server-side library built for Node.js & TypeScript that helps developers read and write data to the database in an intuitive, efficient and safe way.",
+     "skillUrl": "prisma"
+    },
+    {"skillTitle": "ExpressJs",
+     "skillDescription": "Express is a back-end web application framework for building RESTful APIs with Node.js, released as free and open-source software under the MIT License.",
+     "skillUrl": "expressjs"
+    },
+    {"skillTitle": "PostgreSQL",
+     "skillDescription": "PostgreSQL is an open-source relational database management system emphasizing extensibility and SQL compliance.",
+     "skillUrl": "postgresql"
+    },
+    {"skillTitle": "Node",
+     "skillDescription": "Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine, and executes JavaScript code outside a web browser.",
+     "skillUrl": "node"
+    },
+    {"skillTitle": "Github",
+     "skillDescription": "Github is a platform and cloud-based service for software development and version control using Git, allowing developers like me to store and manage their code. Visit my github account /yfajrin",
+     "skillUrl": "github"
+    },
+    {"skillTitle": "Wordpress",
+     "skillDescription": "Wordpress is a web content management system (CMS). I have used Wordpress for more than 8 years to build several company and e-commerce websites.",
+     "skillUrl": "wordpress"
+    },
+    {"skillTitle": "Elementor",
+     "skillDescription": "Elementor is a visual WordPress website builder that replaces the basic WordPress editor with a live frontend editor, for creating complex layouts visually, and design the website live.",
+     "skillUrl": "elementor"
+    },
+    {"skillTitle": "Mailchimp",
+     "skillDescription": "Mailchimp is a marketing automation and email marketing platform. I used Mailchimp mainly for my company's email marketing campaign.",
+     "skillUrl": "mailchimp"
+    },
+    {"skillTitle": "Photoshop",
+     "skillDescription": "Adobe Photoshop is a raster graphics editor developed and published by Adobe Inc. I used it mainly for image editing, retouching, creating image compositions, creating mockups, and adding affects.",
+     "skillUrl": "photoshop"
+    },
+    {"skillTitle": "Corel Draw",
+     "skillDescription": "CorelDRAW is a vector graphics editor developed and marketed by Alludo. I used it to create professional designs with vector illustration, layout, editing, typography, template tools, and more.",
+     "skillUrl": "corel-draw"
+    },
+    {"skillTitle": "Premiere Pro",
+     "skillDescription": "Adobe Premiere Pro is a timeline-based and non-linear video editing software application developed by Adobe Inc. It is my go-to software for video editing.",
+     "skillUrl": "premiere-pro"
+    }
+]
