@@ -52,6 +52,9 @@ const Navbar = () => {
                         <Link href='/'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
                         </Link>
+                        <Link href='https://kangfajrin.id/'>
+                            <li className='ml-10 text-sm uppercase hover:border-b'>Blog</li>
+                        </Link>
                         <Link href='/#about'>
                             <li className='ml-10 text-sm uppercase hover:border-b'>About</li>
                         </Link>
@@ -110,7 +113,7 @@ const Navbar = () => {
                             <p className='tracking-widest uppercase text-[#7abf17]'>Let`s connect!</p>
                             <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <Link href='https://www.linkedin.com/in/fajrin-yusuf-muttaqin-91115313a/' rel="noopener noreferrer" target="_blank">
+                                    <Link href='https://www.linkedin.com/in/fajrin-ym/' rel="noopener noreferrer" target="_blank">
                                         <FaLinkedinIn />
                                     </Link>
                                 </div>
@@ -125,7 +128,7 @@ const Navbar = () => {
                                     </Link>
                                 </div>
                                 <div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300'>
-                                    <Link href='hhttps://api.whatsapp.com/send/?phone=6285759029216&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
+                                    <Link href='https://api.whatsapp.com/send/?phone=447470636463&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
                                         <BsWhatsapp />
                                     </Link>
                                 </div>

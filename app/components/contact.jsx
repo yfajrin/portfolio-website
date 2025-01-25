@@ -31,14 +31,15 @@ const Contact = () => {
                             <h2 className='py-2'>
                                 Fajrin Y. M.
                             </h2>
-                            <p>Experienced entrepeneur and web developer, part-time mountain hiker, intrigued by data science and research, love to learn something new.</p>
-                            <p className='py-4'>I am available for projects</p>
+                            <p>Postgraduate researcher, social entrepeneur, part-time web developer, intrigued by data science, research, and adventure stories. Love to learn something new.</p>
+                            <p className='py-4'>Currently not available for other projects</p>
+                            <p className='py-4'>fymuttaqin1@sheffield.ac.uk</p>
                         </div>
                     <div>
                         <p className='uppercase pt-8'>Connect with Me</p>
                         <div className='flex items-center justify-between py-4'>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300'>
-                                <Link href='https://www.linkedin.com/in/fajrin-yusuf-muttaqin-91115313a/' rel="noopener noreferrer" target="_blank">
+                                <Link href='https://www.linkedin.com/in/fajrin-ym/' rel="noopener noreferrer" target="_blank">
                                     <FaLinkedinIn />
                                 </Link>
                             </div>
@@ -53,7 +54,7 @@ const Contact = () => {
                                 </Link>
                             </div>
                             <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300'>
-                                <Link href='hhttps://api.whatsapp.com/send/?phone=6285759029216&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
+                                <Link href='hhttps://api.whatsapp.com/send/?phone=447470636463&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
                                     <BsWhatsapp />
                                </Link>
                             </div>                            

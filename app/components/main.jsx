@@ -17,10 +17,10 @@ const Main = () => {
                     <h2 className='py-4 text-gray-700'>Hi, I`m  
                         <TypeAnimation
                             sequence={[' Fajrin', 2000,
+                                       ' a Researcher', 2000, 
                                        ' an Entrepreneur', 2000,
                                        ' a Writer', 2000, 
                                        ' a Data Scientist', 2000,
-                                       ' a Researcher', 2000, 
                                        ' a Web Developer', 2000,
                                        ' a Business Teacher', 2000,
                                        ' anything I want to be!', 2000]}
@@ -33,10 +33,12 @@ const Main = () => {
 
                     </h2>
                     <h2 className='py-2 text-gray-700'>Let me hear your problems!</h2>
-                    <p className='py-4 text-gray-600 max-w-[70%] m-auto'>I`m an experienced entrepreneurs with lots of failures, but hey, it brings me to you, a better world. Currently, I`m focused on exploring new technologies to broaden my scope of view.</p>
+                    <p className='pt-4 text-gray-600 max-w-[100%] m-auto'>I`m an experienced entrepreneur with lots of failures, but hey, it brings me to you, a better world.</p> 
+                    <p className='text-gray-600 max-w-[80%] m-auto'>Currently, I`m a <a style={{color:'#7abf17'}} href='https://www.sheffield.ac.uk/management/people/doctoral-researchers/fajrin-muttaqin' rel="noopener noreferrer" target="_blank">postgraduate researcher at the University of Sheffield.</a></p> 
+                    <p className='pb-4 text-gray-600 max-w-[100%] m-auto'>My research focuses on social entrepreneurship and entrepreneurial failure.</p>
                     <div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300'>
-                            <Link href='https://www.linkedin.com/in/fajrin-yusuf-muttaqin-91115313a/' rel="noopener noreferrer" target="_blank">
+                            <Link href='https://www.linkedin.com/in/fajrin-ym/' rel="noopener noreferrer" target="_blank">
                                 <FaLinkedinIn />
                             </Link>
                         </div>
@@ -51,7 +53,7 @@ const Main = () => {
                             </Link>
                         </div>
                         <div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-120 ease-in duration-300'>
-                            <Link href='hhttps://api.whatsapp.com/send/?phone=6285759029216&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
+                            <Link href='https://api.whatsapp.com/send/?phone=447470636463&text&type=phone_number&app_absent=0' rel="noopener noreferrer" target="_blank">
                                 <BsWhatsapp />
                             </Link>
                         </div>
